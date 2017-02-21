@@ -1,7 +1,7 @@
 {
-  "name": "cs-mobile",
+  "name": "asmobile",
   "version": "1.0.0",
-  "description": "infinitus cs mobile for 耐用品登记",
+  "description": "infinitus cs mobile for mobile",
   "author": "foy <ljs2342003@gmail.com>",
   "private": true,
   "scripts": {
