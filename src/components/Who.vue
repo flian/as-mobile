@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div>{{whoami}}</div>
+        <div>{{welcomeMsg}}</div>
     </div>
 </template>
 <style>
@@ -10,6 +10,12 @@
 </style>
 <script>
     export default{
-        props: ['whoami']
+        props: ['whoami'],
+        computed:{
+         welcomeMsg:function(){
+           var self = this;
+           return 'wellcome '+ self.whoami + ' to Vue全家桶!!';
+         }
+        }
     }
 </script>
