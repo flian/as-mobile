@@ -1,6 +1,6 @@
-# cs-mobile
+# asmobile
 
-> infinitus cs mobile for 耐用品登记 (note, please upgrade node latest version)
+> A Vue.js project
 
 ## Build Setup
 

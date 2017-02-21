@@ -3,7 +3,7 @@
     <img class="logo" src="./assets/logo.png">
     <hello></hello>
     <p>
-      Welcome to your Vue.js app!
+      Welcome to your Vue.js app!<who whoami="foy"></who>
     </p>
     <p>
       To get a better understanding of how this boilerplate works, check out
@@ -24,10 +24,12 @@
 
 <script>
 import Hello from './components/Hello'
+import Who from './components/Who'
 
 export default {
   components: {
-    Hello
+    Hello,
+    Who
   }
 }
 </script>
