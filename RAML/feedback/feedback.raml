@@ -1,0 +1,31 @@
+/:
+  get:
+    description: 返回属于用户的反馈单；一般员工返回自己提交的、草稿反馈单；专员返回需要自己处理的反馈单
+    responses:
+      200:
+        body:
+          application/json:
+            schema: |
+              { "$schema": "http://json-schema.org/schema",
+                "type": "array",
+                "items" : {
+                  "type" : "object",
+                  "description": "反馈单总列表",
+                  "properties": {
+                    "ID": { "type": "string" },
+                    "recNo": { "type": "string"},
+                    "recDateTime" : { "type": "timestamp"},
+                    "recStatus": { "type": "integer"},
+                    "recType": { "type": "integer"},
+                    "productName": { "type": "string"},
+                    "recUserName": { "type": "string"},
+                    "feedbackResult": { "type": "integer"},
+                    "feedbackComment": { "type": "string"},
+                    "booleanTest": {"type":"boolean"},
+                    "randomNumber": {"type":"number"}
+                  },
+                  "required": [ "ID", "recNo" ,"recStatus", "recType","productName",
+                  "recUserName","feedbackResult", "feedbackComment","randomNumber"]
+                }
+              }
+
