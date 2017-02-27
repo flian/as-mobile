@@ -1,10 +1,12 @@
 <template>
   <div id="app">
     <img class="logo" src="./assets/logo.png">
-    <hello></hello>
-    <p>
-      Welcome to your Vue.js app!<who whoami="foy"></who>
+    <hello v-show="showHello"></hello>
+    <p v-show="!showHello">
+      Welcome to your Vue.js app!
+      <who whoami="foy"></who>
     </p>
+    <input type="button" value="switch" @click="showHidenTest"/>
     <p>
       To get a better understanding of how this boilerplate works, check out
       <a href="http://vuejs-templates.github.io/webpack" target="_blank">its documentation</a>.
@@ -27,11 +29,22 @@ import Hello from './components/Hello'
 import Who from './components/Who'
 
 export default {
+  data(){
+  return{
+     showHello : true
+  }
+  },
+  methods:{
+    showHidenTest:function(){
+       this.showHello = !this.showHello;
+    }
+  },
   components: {
     Hello,
     Who
   }
 }
+
 </script>
 
 <style>
@@ -63,4 +76,5 @@ body {
   width: 100px;
   height: 100px
 }
+
 </style>
