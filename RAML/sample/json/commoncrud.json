@@ -1,0 +1,12 @@
+[
+  {
+    "name": "title",
+    "type": "string",
+    "rule":"NOT_NULL"
+  },
+  {
+    "name": "artist",
+    "type": "string",
+    "rule": "NOT_NULL"
+  }
+]
